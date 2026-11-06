@@ -1,9 +1,11 @@
-import { Text, View, StyleSheet } from "react-native";
+import React from 'react';
+import { View, ActivityIndicator, StyleSheet } from 'react-native';
+import Colors from '../theme/colors';
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <ActivityIndicator size="large" color={Colors.primary} />
     </View>
   );
 }
@@ -11,7 +13,8 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: Colors.background,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
